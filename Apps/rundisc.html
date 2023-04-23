@@ -1,0 +1,58 @@
+<html>
+    <title>Discord | MaxiGames</title>
+    <link rel="icon" type="image/x-icon"href="../Assets/mg_favicon.png">
+    <link rel="stylesheet" href="../Games/gamestyle.css">
+    <script src="https://kit.fontawesome.com/099ae7de0b.js"></script>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <a href="../MainSites/homepage.html"><img src="../Assets/maxigamesBeta.png" alt="MaxiGames Logo" class="logo"></a>
+                <ul>
+                    <li><a href="../MainSites/library.html">🎮 <strong>Library</strong></a></li>
+                    <li><a href="../MainSites/apps.html">📱 <strong>Apps</strong></a></li>
+                </ul>
+            </div>
+            <section class="container">
+                <h3>Discord</h3>
+                <div id='contplay'> <iframe src="https://a.megamathstuff.com/service/hvtrs8%2F-dksaopd%2Ccmm-" frameborder="0" id="player"></iframe> </div>
+            </script>
+            <img onclick="fullScreen()" src="../Assets/FullscreenBTN.png" alt="Fullscreen" id="fullscreenButton">
+            <script>
+                /* Get the element you want displayed in fullscreen mode (a video in this example): */
+var elem = document.getElementById("player");
+
+/* When the openFullscreen() function is executed, open the video in fullscreen.
+Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
+function fullScreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+            </script>
+        
+                <div class="description">
+                    <H2>Description</H2>
+                    <p>discord</p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>MaxiGames</h3>
+                <p>Fun Things. In your browser.</p>
+                <ul class="socials">
+                    <li><a href="https://www.youtube.com/channel/UCqyDFNtWE-8z5cuiTQrRfCw" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>MaxiGames 2023. Designed by <span><a href="https://www.youtube.com/channel/UCBVYuUGO3IFa4A7sz7Eeevg" target="_blank"><strong>MaxPlayz</strong></a></span></p>
+            </div>
+        </footer>
+
+    </body>
+</html>

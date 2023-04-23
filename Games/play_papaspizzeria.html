@@ -1,0 +1,69 @@
+<html>
+    <title>Papa's Pizzeria | MaxiGames</title>
+    <link rel="icon" type="image/x-icon"href="../Assets/mg_favicon.png">
+    <link rel="stylesheet" href="gamestyle.css">
+    <script src="https://kit.fontawesome.com/099ae7de0b.js"></script>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <a href="../MainSites/homepage.html"><img src="../Assets/maxigamesBeta.png" alt="MaxiGames Logo" class="logo"></a>
+                <ul>
+                    <li><a href="../MainSites/library.html">🎮 <strong>Library</strong></a></li>
+                    <li><a href="../MainSites/apps.html">📱 <strong>Apps</strong></a></li>
+                </ul>
+            </div>
+            <section class="container">
+                <h3>Papa's Pizzeria</h3>
+                <div id='ruffle'></div>
+        <script src='https://e9x.github.io/ruffle-example/ruffle.js'></script>
+        <script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://maxplayzreal.github.io/Flash-Games-SWF/papaspizzeria_v2.swf', 'ruffle', 1024, 640);
+        </script>
+                <img onclick="fullScreen()" src="../Assets/FullscreenBTN.png" alt="Fullscreen" id="fullscreenButton">
+                <script>
+                    function fullScreen() {
+                        document.querySelector("ruffle-embed, ruffle-object, ruffle-player").enterFullscreen();
+                    }
+                </script>
+                <div class="description">
+                    <H2>Description</H2>
+                    <p>
+                        A Rated E Game allows players to give people the right order. Help Roy run the pizzeria while Papa Louie is gone. When Papa Louie runs off on another adventure, Delivery Boy Roy is left in charge of Papa's Pizzeria. Unfortunately for Roy, the customers are used to Papa Louie's style of fully custom pizzas.</p>
+                </div>
+                <div class="controls">
+                    <H2>Controls</H2>
+                    <ul>
+                        <li><img src="../Assets/mouse.png" alt="Arrow Keys"><p>Use mouse to take orders, cook, etc.</p></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>MaxiGames</h3>
+                <p>Fun Things. In your browser.</p>
+                <ul class="socials">
+                    <li><a href="https://www.youtube.com/channel/UCqyDFNtWE-8z5cuiTQrRfCw" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>MaxiGames 2023. Designed by <span><a href="https://www.youtube.com/channel/UCBVYuUGO3IFa4A7sz7Eeevg" target="_blank"><strong>MaxPlayz</strong></a></span></p>
+            </div>
+        </footer>
+
+    </body>
+</html>

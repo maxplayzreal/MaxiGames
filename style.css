@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.banner{
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(109,99,215,1),rgb(157, 0, 255));
+}
+h1 {
+    color: white;
+    padding: 10px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo img{
+    width: auto;
+    max-width: 20%;
+    position: relative;
+}
+.passform span {
+    font-size: large;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.passform {
+    position: relative;
+    text-align: center;
+}
+.passform #pass1 {
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.passform #button {
+    background-color: white;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    border-color: grey;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.passform #button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.passform #pass1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
